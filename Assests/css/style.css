@@ -42,3 +42,17 @@ body {
     margin-bottom: 1.5em;
     background-color:lightskyblue;
 }
+#birthday__female {
+    margin-left: 1em;
+}
+.birthday__output {
+    display: none;
+}
+.birthday__control {
+    width: 2.5em;
+    height: 2em;
+    padding: 0 .2em;
+    margin-right: 1em;
+    margin-left: .5em;
+    text-align: center;
+}
