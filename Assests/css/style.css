@@ -38,7 +38,7 @@ body {
     flex-direction: column;
     padding: 20px;
     width: 22em;
-    height: 8em;
+    /* height: 8em; */
     margin-bottom: 1.5em;
     background-color:lightskyblue;
 }
