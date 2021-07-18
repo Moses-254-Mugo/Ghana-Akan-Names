@@ -76,6 +76,7 @@ const getDay = (day, month, year) => {
     // console.log(d.toFixed(0));
     return d.toFixed(0)
 }
+
 const getName = () => {
     console.log(getDay(day, month, year));
 
@@ -109,5 +110,32 @@ const getName = () => {
                 break;
         }
     }
-    
+    else {
+        switch (d * 1) {
+            case 0:
+                _name = 'Akousa'
+                break;
+            case 1:
+                _name = 'Adwoa'
+                break;
+            case 2:
+                _name = 'Abenaa'
+                break;
+            case 3:
+                _name = 'Akua'
+                break;
+            case 4:
+                _name = 'Yaa'
+                break;
+            case 5:
+                _name = 'Afua'
+                break;
+            case 6:
+                _name = 'Ama'
+                break;
+            default:
+                break;
+        }
+    }
+    return _name
 }
