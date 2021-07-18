@@ -8,6 +8,46 @@
     <title>Akan Names</title>
 </head>
 <body>
-    
+    <section class="birthday">
+        <div class="birthday__head">
+            <h1 class="birthday__title">Akan Name</h1>
+            <p class="birthday__desc">
+                A web application that takes your birthday and calculates
+                 the day of the week you were born. It then outputs your Akan
+                 name depending on your gender.
+            </p>
+        </div>
+        <form action="#" method="#" class="birthday__input">
+            <div style="margin-bottom: 1em;">
+                <input type="radio" name="gender" id="birthday__male" value="male" checked>
+                <label for="birthday__male">Male</label>
+
+                <input type="radio" name="gender" id="birthday__female" value="female">
+                <label for="birthday__female">Female</label>
+            </div>
+            <div>
+                <label for="birthday__day">Day</label>
+                <input type="text" name="day" id="birthday__day" class="birthday__control" required>
+                
+                <label for="birthday__day">Month</label>
+                <input type="text" name="day" id="birthday__month" class="birthday__control" required>
+                
+                <label for="birthday__day">Year</label>
+                <input type="text" name="year" id="birthday__year" class="birthday__control" required>
+            </div>
+            <div>
+                <input type="button" value="Submit" id="birthday__submit">
+            </div>
+            <div>
+                <input type="reset" value="Reset"/>
+            </div>
+        </form>
+        <div class="birthday__output">
+            <p>Your Akan name is <span id="birthday__name"></span>.</p>
+        </div>
+    </section>
+
+
+    <script src="./Assests/js/script.js"></script>
 </body>
 </html>

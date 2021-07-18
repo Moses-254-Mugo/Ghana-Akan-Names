@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-color: lavender
+}
+.birthday {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 26rem;
+    margin-top: 2em;
+    text-align: center;
+}
+.birthday__title {
+    margin-top: 1.5em;
+}
+.birthday__subtitle {
+    font-style: italic;
+    font-size: smaller;
+    margin-bottom: 1.5em;
+}
+.birthday__desc {
+    font-size: medium;
+    text-align: justify;
+    margin-bottom: 1em;
+}
+.birthday__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 22em;
+    /* height: 8em; */
+    margin-bottom: 1.5em;
+    background-color:lightskyblue;
+}
+#birthday__female {
+    margin-left: 1em;
+}
+.birthday__output {
+    display: none;
+}
+.birthday__control {
+    width: 2.5em;
+    height: 2em;
+    padding: 0 .2em;
+    margin-right: 1em;
+    margin-left: .5em;
+    text-align: center;
+}
+.birthday__control:last-child {
+    width: 3.5em;
+    margin-right: 0;
+}
+[type='button'], [type='reset'] {
+    width: 5em;
+    height: 2em;
+    margin-top: 1em;
+}
+#birthday__name {
+    font-weight: 600;
+}
