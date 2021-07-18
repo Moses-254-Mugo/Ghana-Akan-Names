@@ -31,3 +31,14 @@ body {
     text-align: justify;
     margin-bottom: 1em;
 }
+.birthday__input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 22em;
+    /* height: 8em; */
+    margin-bottom: 1.5em;
+    background-color:lightskyblue;
+}
