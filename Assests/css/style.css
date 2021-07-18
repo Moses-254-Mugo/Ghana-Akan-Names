@@ -26,3 +26,8 @@ body {
     font-size: smaller;
     margin-bottom: 1.5em;
 }
+.birthday__desc {
+    font-size: medium;
+    text-align: justify;
+    margin-bottom: 1em;
+}
