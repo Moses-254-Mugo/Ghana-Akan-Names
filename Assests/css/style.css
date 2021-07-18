@@ -18,3 +18,11 @@ body {
     margin-top: 2em;
     text-align: center;
 }
+.birthday__title {
+    margin-top: 1.5em;
+}
+.birthday__subtitle {
+    font-style: italic;
+    font-size: smaller;
+    margin-bottom: 1.5em;
+}
