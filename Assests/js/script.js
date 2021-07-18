@@ -23,3 +23,43 @@ dayControl.addEventListener('change', () => {
 monthControl.addEventListener('change', () => {
     validate()
 })
+
+
+submitBtn.addEventListener('click', () => {
+    console.log(validate());
+
+    if (validate()) {
+        console.log(`${gender} ${day} ${month} ${year}`);
+        
+        _akanName = getName()
+        akanName.textContent = _akanName
+
+        birthdayOutput.style.display = 'block'
+    }
+    else {
+        alert(`Invalid: ${err}.`)
+
+        if (err.indexOf('day') >= 0)
+            dayControl.value = ''
+            
+        if (err.indexOf('month') >= 0)
+            monthControl.value = ''
+
+        err = []
+    }
+})
+
+const validate = () => {
+    if (day <= 0 || day > 31)
+        err.push('day')
+
+    if (month <= 0 || month > 12)
+        err.push('month')
+
+    if (err.length !== 1) {
+        err.shift()
+
+        return false
+    }
+    return true
+}
