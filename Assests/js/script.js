@@ -63,3 +63,16 @@ const validate = () => {
     }
     return true
 }
+
+const getDay = (day, month, year) => {
+    let d                               // Day of the week
+    let dd = day                        // Day of the month
+    let mm = month                      // Month
+    let yy = year % 100                 // Year (89)
+    let cc = (year / 100).toFixed(0)    // Century  (19)
+
+    d = (((cc / 4) - 2 * cc - 1) + ((5 * yy / 4)) + ((26 * (mm + 1) / 10)) + dd) % 7
+
+    // console.log(d.toFixed(0));
+    return d.toFixed(0)
+}
