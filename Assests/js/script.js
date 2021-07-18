@@ -76,3 +76,38 @@ const getDay = (day, month, year) => {
     // console.log(d.toFixed(0));
     return d.toFixed(0)
 }
+const getName = () => {
+    console.log(getDay(day, month, year));
+
+    let _name
+    let d = getDay(day, month, year);
+
+    if (gender === 'male') {
+        switch (d * 1) {
+            case 0:
+                _name = 'Kwasi'
+                break;
+            case 1:
+                _name = 'Kwadwo'
+                break;
+            case 2:
+                _name = 'Kwabena'
+                break;
+            case 3:
+                _name = 'Kwaku'
+                break;
+            case 4:
+                _name = 'Yaw'
+                break;
+            case 5:
+                _name = 'Kofi'
+                break;
+            case 6:
+                _name = 'Kwame'
+                break;
+            default:
+                break;
+        }
+    }
+    
+}
