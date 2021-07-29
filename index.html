@@ -4,48 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./Assests/css/style.css">
     <title>Akan Names</title>
 </head>
 <body>
-    <section class="birthday">
-        <div class="birthday__head">
-            <h1 class="birthday__title">Akan Name</h1>
-            <p class="birthday__desc">
-                A web application that takes your birthday and calculates
-                 the day of the week you were born. It then outputs your Akan
-                 name depending on your gender.
-            </p>
+    <div class="container">
+        <div class="header">
+            <h1>Akan Name Calculator</h1>
         </div>
-        <form action="#" method="#" class="birthday__input">
-            <div style="margin-bottom: 1em;">
-                <input type="radio" name="gender" id="birthday__male" value="male" checked>
-                <label for="birthday__male">Male</label>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="left-col">
+                   
+                    <p class="text-center">A web application that takes your birthday and calculate the day of the week one was born. 
+                        It then outputs your Akan name depending on your gender.</p>
+                    <p class="text-center">Akan people form Ghana frequently name their children after day of the week they were born in. Below is a list of the namings.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h4>Male</h4>
+                            <li>Sunday - kwasi</li>
+                            <li>Monday - Kwado</li>
+                            <li>Tuesday - Kwabena</li>
+                            <li>Wednesday - Kwaku</li>
+                            <li>Thursday - Yaw</li>
+                            <li>Friday - Kofi</li>
+                            <li>Saturday - Kwama</li>
+                        </div>
+                        <div class="col-sm-6">
+                            <h4>Female</h4>
+                            <li>Sunday - Akosua</li>
+                            <li>Monday - Adwoa</li>
+                            <li>Tuesday - Abenaa</li>
+                            <li>Wednesday - Akua</li>
+                            <li>Thursday - Yaa</li>
+                            <li>Friday - Afua</li>
+                            <li>Saturday - Ama</li>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+            <div class="col-sm-6">
+               <div class="right-col">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td>Enter a date:</td>
+                        </tr>
+                        <tr>
+                            <td>Day:</td>
+                            <td><input type="text" id="dob" size="6" maxlength="2"  placeholder="01" ></td>
+                        </tr>
+                        <tr>
+                            <td>Month:</td>
+                            <td><input type="text" id="mob" size="6"  placeholder="02"></td>
+                        </tr>
+                        <tr>
+                            <td>Year:</td>
+                            <td><input type="text" id="yob" size="6" placeholder="2005"></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td>
+                                <select name="gender" id="gender">
+                                    <option selected>Choose</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" class="button" value="Send" onclick="checkAkanName()"></td>
+                            <td></td>
+                            <td><input type="reset"></td>
+                        </tr>
+                    </table>
+                </form>
+                <p id="output">Results</p>
+            </div>
+               </div>
+        </div>
 
-                <input type="radio" name="gender" id="birthday__female" value="female">
-                <label for="birthday__female">Female</label>
-            </div>
-            <div>
-                <label for="birthday__day">Day</label>
-                <input type="text" name="day" id="birthday__day" class="birthday__control" required>
-                
-                <label for="birthday__day">Month</label>
-                <input type="text" name="day" id="birthday__month" class="birthday__control" required>
-                
-                <label for="birthday__day">Year</label>
-                <input type="text" name="year" id="birthday__year" class="birthday__control" required>
-            </div>
-            <div>
-                <input type="button" value="Submit" id="birthday__submit">
-            </div>
-            <div>
-                <input type="reset" value="Reset"/>
-            </div>
-        </form>
-        <div class="birthday__output">
-            <p>Your Akan name is <span id="birthday__name"></span>.</p>
-        </div>
-    </section>
+    </div>
+
+
+    <!-- Footer -->
+    <div id="footer">
+        <h5>Designed By Moses</h5>
+        <h5>&copy; 2021</h5>
+    </div>
 
 
     <script src="./Assests/js/script.js"></script>
