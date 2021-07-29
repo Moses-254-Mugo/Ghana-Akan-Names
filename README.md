@@ -8,7 +8,7 @@ Feel free to comment, critique or even submit a pull request.
 Moses Kinyua Mugo
 
 ## Description
-<img src = "./Assests/images/form.png" alt ="Image form">
+<img src = "./Assests/images/landing-page.PNG" alt ="Image form">
 
 ## Setup/Installation Requirements 
 * Clone the repository to your computer from <a href="https://github.com/Moses-254-Mugo/Ghana-Akan-Names">here</a>
